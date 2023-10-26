@@ -1,0 +1,6 @@
+services:
+  php-dumper-docker-extension:
+    image: ${DESKTOP_PLUGIN_IMAGE}
+    ports:
+      - "9912:9912"
+      - "9913:9913"

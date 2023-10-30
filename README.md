@@ -63,12 +63,17 @@ Make sure these ports are not used by other applications on your machine.
 
 ### Troubleshooting
 
-If you are unable to see the dump data in the extension,
+- If you are unable to see the dump data in the extension,
 try opening the following URL in your browser to see if the extension is able to receive the data:
 
-```
-http://localhost:9913/dump
-```
+  ```
+  http://localhost:9913/dump
+  ```
+- If you still see the dump data in the browser but not in the extension, try updating the symfony/var-dumper package
+  to the latest version:
+    ```shell
+    composer update symfony/var-dumper
+    ```
 
 ### Clean up
 
